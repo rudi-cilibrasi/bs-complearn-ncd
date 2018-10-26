@@ -1,7 +1,7 @@
 open InputDataPreprocessor;
 open Array;
 
-let compressedSize = s=>String.length(ZLibCompressor.compressSync(s));
+let compressedSize = s=>String.length(Node.Buffer.toString(NZlib.deflateRawSync(Node.Buffer.fromString(s))));
 
 let singleLengths : array(sample) => array(int) = 
     map(s => compressedSize(s.content));
