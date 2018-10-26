@@ -1,0 +1,30 @@
+{
+  "name": "@rudi-cilibrasi/bs-node-zlib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "test": "jest"
+  },
+  "files": [
+    "src/Zlib.re",
+    "bsconfig.json"
+  ],
+  "keywords": [
+    "bucklescript",
+    "zlib",
+    "node",
+    "reason",
+    "reasonml"
+  ],
+  "author": "Rudi Cilibrasi",
+  "license": "MIT",
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.4",
+    "bs-platform": "^4.0.6",
+    "jest": "^23.6.0"
+  }
+}
